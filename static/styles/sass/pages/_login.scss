@@ -110,13 +110,11 @@ section.login {
             padding-top: 20px;
           }
 
-          input:placeholder-shown ~ .field-label,
-          input:not(:focus) ~ button.password-toggle {
+          input:placeholder-shown ~ .field-label {
             display: none;
           }
 
-          input:focus ~ .field-label,
-          input:focus ~ button.password-toggle {
+          input:focus ~ .field-label {
             display: block;
           }
 
@@ -131,21 +129,6 @@ section.login {
             width: 1px;
             overflow: hidden;
             transition: font-size 0.5s ease;
-          }
-
-          input[type="password"]:focus ~ .field-label,
-          input[type="password"]:not(:focus):valid ~ .field-label,
-          input[type="password"]:not(:placeholder-shown) ~ .field-label {
-            top: 8px;
-            bottom: 10px;
-            left: 10px;
-            font-size: 14px;
-            height: 30px;
-            width: 400px;
-            clip: unset;
-            opacity: 1;
-            font-weight: 500;
-            font-family: $font-family-primary;
           }
 
           input:not([type="submit"]):not([type="radio"]):not(
@@ -186,6 +169,16 @@ section.login {
             width: 400px;
             clip: unset;
             text-align: left;
+            top: 8px;
+            bottom: 10px;
+            left: 10px;
+            font-size: 14px;
+            height: 30px;
+            width: 400px;
+            clip: unset;
+            opacity: 1;
+            font-weight: 500;
+            font-family: $font-family-primary;
           }
 
           input:focus::placeholder {
@@ -213,6 +206,7 @@ section.login {
               font-family: $font-family-medium;
               font-weight: bold;
               font-variant: normal;
+              outline: none;
             }
           }
         }
