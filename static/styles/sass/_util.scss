@@ -1,8 +1,7 @@
-.container {
-  position: relative;
-  margin: 120px auto 0;
-  padding: 30px 10% 50px;
-  border: 1px solid #eaeced;
-  overflow: hidden;
-  border-radius: 12px;
+@font-face {
+  font-family: Monforat;
+  src: url('/static/fonts/Monforat-Regular.eot');
+  src: url('/static/fonts/Monforat-Regular.eot?#iefix') format("embedded-opentype"),
+    url('/static/fonts/Monforat-Regular.woff2') format("woff2"),
+    url('/static/fonts/Monforat-Regular.svg') format("svg");
 }
