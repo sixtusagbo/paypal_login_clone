@@ -218,6 +218,25 @@ section.login {
         font-size: 18px;
         text-align: left;
       }
+
+      .divider {
+        border-top: 1px solid #cbd2d6;
+        position: relative;
+        margin-top: 8.72%;
+        margin-bottom: 4.895%;
+        height: 15px;
+        text-align: center;
+        font-size: 83.34%;
+
+        span {
+          background-color: #fff;
+          padding: 0 0.5em;
+          position: relative;
+          color: #6c7378;
+          top: -0.7em;
+          font-size: 15px;
+        }
+      }
     }
   }
 }
