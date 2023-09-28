@@ -5,3 +5,8 @@
     url('/static/fonts/Monforat-Regular.woff2') format("woff2"),
     url('/static/fonts/Monforat-Regular.svg') format("svg");
 }
+
+p, div, span, a, h1, label, select {
+  font-weight: 400;
+  font-variant: normal;
+}
