@@ -1,0 +1,13 @@
+body {
+  background: #ffffff;
+}
+
+.main {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+@import 'util';
+
+@import 'pages/login';
