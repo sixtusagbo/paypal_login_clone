@@ -1,9 +1,10 @@
-@import "util";
 @import "variables";
+@import "util";
 
 body {
   background: #ffffff;
   font-family: $font-family-primary;
+  font-weight: 400;
 }
 
 .main {
