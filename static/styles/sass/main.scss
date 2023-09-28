@@ -1,6 +1,9 @@
+@import "util";
+@import "variables";
+
 body {
   background: #ffffff;
-  font-family: Monforat, Helvetica, Arial, sans-serif;
+  font-family: $font-family-primary;
 }
 
 .main {
@@ -9,6 +12,4 @@ body {
   justify-content: center;
 }
 
-@import 'util';
-
-@import 'pages/login';
+@import "pages/login";

@@ -1,12 +1,32 @@
 @font-face {
   font-family: Monforat;
-  src: url('/static/fonts/Monforat-Regular.eot');
-  src: url('/static/fonts/Monforat-Regular.eot?#iefix') format("embedded-opentype"),
-    url('/static/fonts/Monforat-Regular.woff2') format("woff2"),
-    url('/static/fonts/Monforat-Regular.svg') format("svg");
+  src: url("/static/fonts/Monforat-Regular.eot");
+  src: url("/static/fonts/Monforat-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/static/fonts/Monforat-Regular.woff2") format("woff2"),
+    url("/static/fonts/Monforat-Regular.svg") format("svg");
 }
 
-p, div, span, a, h1, label, select {
+@font-face {
+  font-family: Monforat-Medium;
+  src: url("/static/fonts/Monforat-Medium.eot");
+  src: url("/static/fonts/Monforat-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("/static/fonts/Monforat-Medium.woff2") format("woff2"),
+    url("/static/fonts/Monforat-Medium.svg") format("svg");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p,
+div,
+span,
+a,
+h1,
+label,
+select {
   font-weight: 400;
   font-variant: normal;
 }

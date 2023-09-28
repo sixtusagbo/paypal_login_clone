@@ -77,7 +77,6 @@ section.login {
             height: 64px;
             width: 100%;
             padding: 0 10px;
-            border: 0.0625rem solid #9da3a6;
             background: #fff;
             text-overflow: ellipsis;
             -webkit-box-sizing: border-box;
@@ -111,11 +110,13 @@ section.login {
             padding-top: 20px;
           }
 
-          input:placeholder-shown ~ .field-label {
+          input:placeholder-shown ~ .field-label,
+          input:not(:focus) ~ button.password-toggle {
             display: none;
           }
 
-          input:focus ~ .field-label {
+          input:focus ~ .field-label,
+          input:focus ~ button.password-toggle {
             display: block;
           }
 
@@ -144,7 +145,7 @@ section.login {
             clip: unset;
             opacity: 1;
             font-weight: 500;
-            font-family: Monforat;
+            font-family: $font-family-primary;
           }
 
           input:not([type="submit"]):not([type="radio"]):not(
@@ -193,7 +194,26 @@ section.login {
 
           input::placeholder {
             font-weight: bold;
-            font-family: Monforat;
+            font-family: $font-family-primary;
+          }
+
+          &.password {
+            display: flex;
+
+            button.password-toggle {
+              width: 12%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background: 0 0;
+              border: 0;
+              color: #1072eb;
+              cursor: pointer;
+              font-size: 13px;
+              font-family: $font-family-medium;
+              font-weight: bold;
+              font-variant: normal;
+            }
           }
         }
       }
